@@ -76,7 +76,7 @@ def main():
 
                 for photo in client.iter_profile_photos(entity): 
                     date = photo.date 
-                    date_str = date.strftime('%Y_%m_%d_%H:%M:%S') 
+                    date_str = date.strftime('%Y%m%d_%H%M%S') 
                     client.download_media(photo, file=f'{date_str}.jpg') 
                     print(f'A profile picture of the user with username {colorama.Fore.RED}@{alias}{colorama.Style.RESET_ALL} has been downloaded in the file {colorama.Fore.RED}{date_str}.jpg{colorama.Style.RESET_ALL}')
 
@@ -116,7 +116,7 @@ def main():
 
                     for photo in client.iter_profile_photos(entity): 
                         date = photo.date 
-                        date_str = date.strftime('%Y_%m_%d_%H:%M:%S') 
+                        date_str = date.strftime('%Y%m%d_%H%M%S') 
                         client.download_media(photo, file=f'{date_str}.jpg') 
                         print(f'A profile picture of the user with ID {colorama.Fore.RED}{user_id}{colorama.Style.RESET_ALL} has been downloaded in the file {colorama.Fore.RED}{date_str}.jpg{colorama.Style.RESET_ALL}')
 
@@ -165,7 +165,7 @@ def main():
 
             for photo in client.iter_profile_photos(user): 
                 date = photo.date 
-                date_str = date.strftime('%Y_%m_%d_%H:%M:%S') 
+                date_str = date.strftime('%Y%m%d_%H%M%S') 
                 client.download_media(photo, file=f'{date_str}.jpg') 
                 print(f'A profile picture of the user with phone number {colorama.Fore.RED}{phone_number}{colorama.Style.RESET_ALL} has been downloaded in the file {colorama.Fore.RED}{date_str}.jpg{colorama.Style.RESET_ALL}')
 
@@ -211,13 +211,13 @@ def get_channel_info(channel):
     else:
         print(f'The channel does not have a user name')
     print(f'The channel description is: {colorama.Fore.RED}{ch_full.full_chat.about}{colorama.Style.RESET_ALL}')
-    print(f'The channel creation date is: {colorama.Fore.RED}{date.strftime("%Y-%m-%d %H:%M:%S (UTC)")}{colorama.Style.RESET_ALL}')
+    print(f'The channel creation date is: {colorama.Fore.RED}{date.strftime("%Y-%m-%d %H%M%S (UTC)")}{colorama.Style.RESET_ALL}')
     client.download_profile_photo(channel, file=f'{channel_id}.jpg')
     print(f'The profile picture of the channel has been downloaded to the file {colorama.Fore.RED}{channel_id}.jpg{colorama.Style.RESET_ALL}')
 
     for photo in client.iter_profile_photos(channel_id): 
         date = photo.date 
-        date_str = date.strftime('%Y_%m_%d_%H:%M:%S') 
+        date_str = date.strftime('%Y%m%d_%H%M%S') 
         client.download_media(photo, file=f'{date_str}.jpg') 
         print(f'A profile picture of the user with username {colorama.Fore.RED}@{username}{colorama.Style.RESET_ALL} has been downloaded in the file {colorama.Fore.RED}{date_str}.jpg{colorama.Style.RESET_ALL}')
 
@@ -231,13 +231,13 @@ def get_chat_info(chat):
     participants = client.get_participants(chat)    
     participants_count = len(participants) 
     print(f'The number of administrators in the group is: {colorama.Fore.RED}{participants_count}{colorama.Style.RESET_ALL}')
-    print(f'The group creation date is: {colorama.Fore.RED}{date.strftime("%Y-%m-%d %H:%M:%S (UTC)")}{colorama.Style.RESET_ALL}')
+    print(f'The group creation date is: {colorama.Fore.RED}{date.strftime("%Y-%m-%d %H%M%S (UTC)")}{colorama.Style.RESET_ALL}')
     client.download_media(photo, file=f'{chat_id}.jpg')
     print(f'The group profile picture has been downloaded in the file {colorama.Fore.RED}{chat_id}.jpg{colorama.Style.RESET_ALL}')
 
     for photo in client.iter_profile_photos(chat_id): 
         date = photo.date 
-        date_str = date.strftime('%Y_%m_%d_%H:%M:%S') 
+        date_str = date.strftime('%Y%m%d_%H%M%S') 
         client.download_media(photo, file=f'{date_str}.jpg') 
         print(f'A profile picture of the user with username {colorama.Fore.RED}@{chat_id}{colorama.Style.RESET_ALL} has been downloaded in the file {colorama.Fore.RED}{date_str}.jpg{colorama.Style.RESET_ALL}')
 
@@ -259,7 +259,7 @@ def bytes_to_str(b):
     if isinstance(b, bytes): 
         return b.hex() 
     elif isinstance(b, datetime.datetime): 
-        return b.strftime('%Y-%m-%d %H:%M:%S (UTC)') 
+        return b.strftime('%Y-%m-%d %H%M%S (UTC)') 
     else: 
         return str(b) 
 
