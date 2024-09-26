@@ -100,7 +100,7 @@ This script can retrieve the following information about Telegram users, channel
 
 ## License
 
-This script is provided under the MIT License. You can find the full license text in the [LICENSE](LICENSE) file.
+This script is provided under the GNU Affero General Public License v3.0. You can find the full license text in the [LICENSE](LICENSE) file.
 
 ---
 
