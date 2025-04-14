@@ -1,0 +1,26 @@
+name: ❓ Question
+description: Further information is requested
+title: "[QUESTION]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before asking a question, please check existing documentation and previous issues.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: Formulate your question clearly and concisely
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide additional context that helps understand your question
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Describe what you've already researched or attempted

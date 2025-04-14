@@ -1,0 +1,35 @@
+name: ✨ Enhancement
+description: New feature or request
+title: "[ENHANCEMENT]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing ideas to improve this project.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is this enhancement related to a problem?
+      description: Clearly describe what the problem or need is
+      placeholder: It's currently difficult to perform...
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear description of what you propose
+      placeholder: I would like to see a feature that...
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you thought of any alternatives to solve this?
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefits
+      description: What benefits would this enhancement bring to the project?
+    validations:
+      required: true

@@ -1,0 +1,30 @@
+name: 📝 Documentation
+description: Improvements or additions to documentation
+title: "[DOC]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve our documentation.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Current Issue
+      description: What is missing, unclear, or needs improvement in the documentation?
+      placeholder: The documentation about X doesn't explain how to...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Improvement Proposal
+      description: Clearly describe what changes you suggest
+      placeholder: I suggest adding a section that explains...
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Location
+      description: Where is the documentation that needs improvement? (URL or file path)

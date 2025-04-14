@@ -1,0 +1,28 @@
+name: ⚠️ Invalid
+description: This doesn't seem right
+title: "[INVALID]: "
+labels: ["invalid"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to report content that seems incorrect or inappropriate.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Explain why you consider the issue or PR invalid
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Location
+      description: Link or reference to the content in question
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggestion
+      description: Do you have any suggestion on how to address this correctly?

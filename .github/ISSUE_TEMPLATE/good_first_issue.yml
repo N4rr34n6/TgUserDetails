@@ -1,0 +1,32 @@
+name: 🌱 Good First Issue
+description: Issue suitable for newcomers
+title: "[GOOD FIRST ISSUE]: "
+labels: ["good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This type of issue is meant to be easy to address for new contributors.
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue Description
+      description: A clear and concise description of the task
+    validations:
+      required: true
+  - type: textarea
+    id: skills
+    attributes:
+      label: Required Skills
+      description: What basic knowledge would someone need to solve this?
+      placeholder: Basic HTML, Basic CSS, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: guide
+    attributes:
+      label: Guide to Solve
+      description: Provide guidance to help solve this issue
+      placeholder: Suggestions of files to modify or approaches to take
+    validations:
+      required: true

@@ -1,0 +1,31 @@
+name: 🆘 Help Wanted
+description: Extra attention is needed
+title: "[HELP WANTED]: "
+labels: ["help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue requires additional help from the community.
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem Description
+      description: Clearly explain what needs attention
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and Details
+      description: Provide all relevant information to understand the situation
+    validations:
+      required: true
+  - type: textarea
+    id: support_needed
+    attributes:
+      label: Type of Help Needed
+      description: What specific type of support are you looking for?
+      placeholder: Technical expertise, code review, ideas, etc.
+    validations:
+      required: true
