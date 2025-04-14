@@ -1,0 +1,24 @@
+name: 🔄 Duplicate
+description: This issue or pull request already exists
+title: "[DUPLICATE]: "
+labels: ["duplicate"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before reporting a duplicate, please search existing issues.
+  - type: textarea
+    id: original_issue
+    attributes:
+      label: Original Issue
+      description: Please provide a link to the original issue
+      placeholder: https://github.com/user/repo/issues/123
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason why you believe this is a duplicate
+      description: Briefly explain why you consider this issue a duplicate
+    validations:
+      required: true
